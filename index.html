@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping With Js</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <script src="https://kit.fontawesome.com/1a6a4e5622.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="pt-4">
+        <div class="navbar bg-base-100 w-11/12 mx-auto bg-blue-100 rounded">
+            <div class="flex-1">
+              <a class="text-3xl font-medium">Interactive</a>
+            </div>
+            <div class="flex-none">
+              <button class="px-5 py-2 bg-sky-700 rounded-lg text-white font-bold">
+               <a href=" https://sarowarhossain1.github.io/b6-house/"> Blog</a>
+              </button>
+            </div>
+          </div>
+    </header>
+    <!-- card design section -->
+    <main>
+        <section class=" lg:px-12 flex flex-col md:flex-row lg:flex-row">
+            <div class="product-cetails mt-5 w-[80%]  grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Triangle section -->
+                <div class="card card-compact w-full s bg-base-100 shadow-xl bg-pink-200">
+                    <figure class="px-10 pt-10">
+                      <img  src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 id="first-name" class="card-title font-bold">Triangle</h2>
+                    <p id="triangle-total">Area (A) = <span id="total-one">0.5</span>  <i class="fa-solid fa-xmark"></i>
+                       <span id="total-two">b</span> <i class="fa-solid fa-xmark"></i><span id="total-three"> h</span>
+                     </p>
+                      <div class="card-actions">
+                        <div class="flex gap-2">
+                        <input id="input-first"class="px-4 py-2 w-[70%] rounded"type="text" placeholder="w"><span id="centimeter-one">cm</span>
+                        <input id="input-second"class="px-4 py-2 rounded w-[70%]"type="text" placeholder="h"><span id="centimeter-two">cm</span>
+                        </div>
+                        <button id="btn-triangle" class="bg-blue-600 w-11/12 px-8 py-2 rounded-lg mt-2 text-2xl font-medium text-white">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Rectangle section -->
+                <div class="card w-full bg-base-100 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                      <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 id="second-name" class="card-title font-bold">Rectangle</h2>
+                    <p id="deposit-total">Area (A) = <span id="deposit-one">w</span> <i class="fa-solid fa-xmark"></i><span id="deposit-two"> i</span></p>
+                      <div class="card-actions">
+                        <div class="flex gap-2">
+                            <input  class="px-3 py-2  bg-gray-200 rounded w-3/4"  type="text" id="input-one"  placeholder="w"><span id="centimeter-one">cm</span>
+                        <input  class="px-3 py-2 bg-gray-200 rounded w-3/4" type="text" name="" id="input-two" placeholder="i"><span id="centimeter-two">cm</span>
+                        </div>
+                        <button id="btn-rectangle" class="bg-blue-600 w-11/12 px-8 py-2 rounded-lg mt-2 text-2xl font-medium text-white">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Parallelogram section -->
+                <div class="card w-full bg-base-100 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                      <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 id="third-name" class="card-title font-bold">Parallelogram</h2>
+                    <p id="parallelogram-total">Area (A) = <span id="position-one">b</span> <i class="fa-solid fa-xmark"></i> <span id="position-two">h</span></p>
+                     <p id="">b=10cm, h=12cm</p>
+                     <div class="card-actions">
+                     <!-- <div class="grid grid-cols-2 gap-2 w-3/4"> -->
+                      <div class="flex gap-2">
+                        <input  class="px-3 py-2  bg-gray-200 rounded w-3/4"  type="text" id="field-one"  placeholder="b"><span id="centimeter-one">cm</span>
+                    <input  class="px-3 py-2 bg-gray-200 rounded w-3/4" type="text" name="" id="field-two" placeholder="h"><span id="centimeter-two">cm</span>
+                    </div>
+                  </div>
+                      <div class="card-actions">
+                        <button id="btn-parallelogram" class="bg-blue-600 w-11/12 px-8 py-2 rounded-lg mt-2 text-2xl font-medium text-white">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Rhombus section -->
+                <div class="card w-full bg-base-100 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                      <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 id="fourth-name" class="card-title font-bold">Rhombus</h2>
+                    <p id="rhombus-total">Area (A) = <span id="position-five">0.5</span> <i class="fa-solid fa-xmark"></i> <span id="position-three">d1</span> <i class="fa-solid fa-xmark"></i> <span id="position-fourth">d2</span></p>
+                    <p>d1=16cm d2=8cm</p>
+                      <div class="card-actions">
+                        <div class="flex gap-2">
+                          <input  class="px-3 py-2  bg-gray-200 rounded w-3/4"  type="text" id="input-three"  placeholder="d1"><span id="centimeter-one">cm</span>
+                      <input  class="px-3 py-2 bg-gray-200 rounded w-3/4" type="text" name="" id="input-fourth" placeholder="d2"><span id="centimeter-two">cm</span>
+                      </div>
+                        <button id="btn-rhombus" class="bg-blue-600 w-11/12 px-8 py-2 rounded-lg mt-2 text-2xl font-medium text-white">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Pentagon section -->
+
+                <div class="card w-full bg-base-100 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                      <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 id="five-name" class="card-title font-bold">Pentagon</h2>
+                    <p id="pentagon-total">Area (A) =<span id="position-eight">0.5</span> <i class="fa-solid fa-xmark"></i> <span id="position-six">p</span> <i class="fa-solid fa-xmark"></i> <span id="position-seven">b</span></p>
+                    <p>p = 6cm, b = 10cm </p>
+                      <div class="card-actions">
+                        <div class="flex gap-2">
+                          <input  class="px-3 py-2  bg-gray-200 rounded w-3/4"  type="text" id="input-five"  placeholder="p"><span id="centimeter-one">cm</span>
+                      <input  class="px-3 py-2 bg-gray-200 rounded w-3/4" type="text" name="" id="input-six" placeholder="b"><span id="centimeter-two">cm</span>
+                      </div>
+                        <button id="btn-pentagon" class="bg-blue-600 w-11/12 px-8 py-2 rounded-lg mt-2 text-2xl font-medium text-white">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Ellipse section -->
+                <div class="card w-full  bg-base-100 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                      <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 id="six-name" class="card-title font-bold">Ellipse</h2>
+                    <p id="ellipse-total">Area (A) = <span id="position-eleven">3.14</span> </p>
+                    <p>a = <span id = position-thirteen>10cm</span>, b = <span id="position-twelve">4cm</span></p>
+                      <div class="card-actions"> 
+                        <div class="flex gap-2">
+                          <input  class="px-3 py-2  bg-gray-200 rounded w-3/4"  type="text" id="input-nine"  placeholder="a"><span id="centimeter-one">cm</span>
+                      <input  class="px-3 py-2 bg-gray-200 rounded w-3/4" type="text" name="" id="input-ten" placeholder="b"><span id="centimeter-two">cm</span>
+                      </div> 
+                        <button id="btn-ellipse" class="bg-blue-600 w-11/12 px-8 py-2 rounded-lg mt-2 text-2xl font-medium text-white">Calculate</button>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+            <div class="cart-details w-50 w-[20%] mx-auto">
+                <h1 class="text-2xl font-bold pt-6 underline text-center">Area Calculation</span></h1>
+                <div class="overflow-x-auto">
+                  <table class="table w-full">
+                    <tbody id="table-container">
+                      <!-- <tr>
+                        <th>1</th>
+                        <td>Cy Ganderton</td>
+                        <td>Quality Control Specialist</td>
+                        <td>Blue</td>
+                      </tr> -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+               
+        </section>
+    </main>
+    <script src="js/triangle.js"></script>
+    <script src="js/Parallelogram.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/rhombus.js"></script>
+    <script src="js/pentagon.js"></script>
+     <script src="js/ellipse.js"></script>    
+    
+</body>
+</html>
